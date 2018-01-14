@@ -1,4 +1,4 @@
-package tijos.sample.sensor.am2320;
+package tijos.framework.sensor.am2320;
 
 import java.io.IOException;
 

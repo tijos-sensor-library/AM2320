@@ -2,24 +2,38 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>tijos</groupId>
-  <artifactId>tijos.am2320</artifactId>
+  <groupId>tijos.framework.sensor.am2320</groupId>
+  <artifactId>am2320</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>sensor</name>
+  <name>am2320</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <build>
+	  <plugins>
+		<plugin>   
+		  <groupId>org.apache.maven.plugins</groupId>   
+		  <artifactId>maven-eclipse-plugin</artifactId>   
+		  <configuration>   
+		  <classpathContainers>
+			<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+			<classpathContainer>net.tijos.dev.sdk.TIJOS_FRAMEWORK/TiJOS Runtime Library 2.0</classpathContainer>
+		  </classpathContainers>
+							
+		   <additionalConfig>   
+			<file>   
+			 <name>.project</name>   
+			 <location>src/main/project/project.xml</location>   
+			</file>   
+		   </additionalConfig>   
+		  </configuration>   
+		 </plugin>   
+	   </plugins>
+   </build>
+
 </project>
