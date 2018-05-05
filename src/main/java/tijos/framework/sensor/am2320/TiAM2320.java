@@ -3,9 +3,9 @@ package tijos.framework.sensor.am2320;
 import java.io.IOException;
 
 import tijos.framework.devicecenter.TiI2CMaster;
-import tijos.util.BigBitConverter;
-import tijos.util.Delay;
-import tijos.util.LittleBitConverter;
+import tijos.framework.util.BigBitConverter;
+import tijos.framework.util.Delay;
+import tijos.framework.util.LittleBitConverter;
 
 /**
  * TiJOS-AM232X Temperature Humidity Sensor Library

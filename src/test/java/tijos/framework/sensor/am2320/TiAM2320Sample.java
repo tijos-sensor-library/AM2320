@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import tijos.framework.devicecenter.TiI2CMaster;
 import tijos.framework.sensor.am2320.TiAM2320;
-import tijos.util.Delay;
+import tijos.framework.util.Delay;
 
 public class TiAM2320Sample {
 
